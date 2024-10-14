@@ -21,7 +21,8 @@ const skillColor = "navy";
 const fontWeight = "bold";
 const textCase = "uppercase";
 ---
-<BaseLayout>
+<head>
+    <title>{pageTitle}</title>
     <style define:vars={{skillColor, fontWeight, textCase}} slot="styles">
         h1 {
             color: purple;
@@ -33,7 +34,8 @@ const textCase = "uppercase";
             text-transform: var(--textCase);
         }
     </style>
-
+</head>
+<BaseLayout>
     <h1>{pageTitle}</h1>
 
     <h2>...and my new Astro site!</h2>
