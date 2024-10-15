@@ -13,7 +13,7 @@ const identity = {
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 3;
 
 const skillColor = "navy";
@@ -27,7 +27,15 @@ const textCase = "uppercase";
             color: purple;
             font-size: 4rem;
         }
+        ul .skill {
+            display: flex;
+            flex-direction: coluumn;
+            align-items: center;
+            justify-content: center;
+        }
         .skill {
+            text-align: left;
+            background-color: #bbb;
             color: var(--skillColor);
             font-weight: var(--fontWeight);
             text-transform: var(--textCase);
